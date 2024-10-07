@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Plant Care - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <!-- Inclui o fragmento da navbar -->
+    <div th:insert="~{fragments/navbar :: navbar}"></div>
+	
+    <!-- Hero Section -->
+	<section class="hero is-primary is-halfheight has-background">
+	    <div class="hero-body is-flex is-justify-content-center is-align-items-center">
+	        <div class="has-text-centered" style="max-width: 600px;">
+	            <p class="title is-1">Cuide das Suas Plantas</p>
+	            <p class="subtitle is-4">com o carinho e atenção que elas merecem.</p>
+
+	            <div class="buttons is-centered mt-5">
+	                <a class="button is-success is-large" href="/docs" target="_blank">Documentação</a>
+	                <a class="button is-light is-large" href="/signup">Crie uma Conta</a>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+    <!-- Seção de Benefícios -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Por que escolher o Plant Care?</h2>
+            <div class="columns is-multiline is-centered">
+                <div class="column is-4">
+                    <div class="box has-text-centered">
+                        <p class="title is-5">Acompanhamento Completo</p>
+                        <p>Mantenha o controle sobre a rega, adubação e cuidados com cada planta.</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="box has-text-centered">
+                        <p class="title is-5">Alertas e Lembretes</p>
+                        <p>Receba lembretes para nunca esquecer de cuidar das suas plantas.</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="box has-text-centered">
+                        <p class="title is-5">Diário das Plantas</p>
+                        <p>Registre e acompanhe o crescimento e desenvolvimento das suas plantas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Inclui o fragmento do footer -->
+	<div th:insert="~{fragments/footer :: footer}"></div>
+</body>
+</html>
